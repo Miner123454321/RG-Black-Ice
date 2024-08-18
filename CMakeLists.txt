@@ -41,7 +41,7 @@ configure_file(configuration/root_directory.h.in configuration/root_directory.h)
 include_directories(${CMAKE_BINARY_DIR}/configuration)
 
 
-include_directories(include/)
+include_directories(include)
 add_executable(${PROJECT_NAME}
         ${SOURCES})
 
