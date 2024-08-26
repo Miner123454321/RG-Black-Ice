@@ -410,8 +410,6 @@ int main() {
         ourShader.setFloat("pointLight.linear", pointLight.linear);
         ourShader.setFloat("pointLight.quadratic", pointLight.quadratic);
 
-
-
         ourShader.setVec3("dirLight.direction", dirLight.direction);
         ourShader.setVec3("dirLight.ambient", dirLight.ambient);
         ourShader.setVec3("dirLight.diffuse", dirLight.diffuse);
@@ -482,6 +480,8 @@ int main() {
             vulcan.Draw(ourShader);
         }
 
+        glDisable(GL_CULL_FACE);
+
         model = glm::mat4(1.0f);
         model = glm::translate(model, glm::vec3(12.5f,1.85f,0.0f)); // translate it down so it's at the center of the scene
         model = glm::rotate(model, glm::radians(7.0f), glm::vec3(0.0f, 0.0f, 1.0f));
@@ -509,6 +509,9 @@ int main() {
         glBindVertexArray(0);
 
         glDisable(GL_BLEND);
+
+        glEnable(GL_CULL_FACE);
+        glCullFace(GL_BACK);
 
         // draw skybox as last
         glDepthFunc(GL_LEQUAL);

@@ -3,3 +3,8 @@ W A S D za kretanje zajedno sa misem, SPACE pritisnuti jednom da bi ze pojavili 
 
 Link ka obj folderu sa teksturama:
 https://drive.google.com/drive/folders/1yJdiS5xPtFROX9D2A2w9tz4YRSEM7jh6?usp=sharing
+
+Projekat sadrzi lekciju Cubemaps iz grupe A
+
+Link ka videu prezentacije projekta:
+https://youtu.be/Ls__1d1ScAE
